@@ -1,18 +1,72 @@
 @font-face {
-	font-family: 'Als Sirius';
-	font-style: normal;
-	font-weight: 900;
-	font-display: swap;
-	src: local(''),
-	url("../font/ALS_Sirius_Black.woff2") format("woff2"),
-	url("../font/ALS_Sirius_Black.woff") format("woff");
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local(''), url('../fonts/Lato-Black.woff2') format('woff2'),
+    url('../fonts/Lato-Black.woff') format('woff');
 }
 @font-face {
-	font-family: 'Als Sirius';
-	font-style: normal;
-	font-weight: 500;
-	font-display: swap;
-	src: local(''),
-	url("../font/ALS_Sirius_Medium.woff2") format("woff2"),
-	url("../font/ALS_Sirius_Medium.woff") format("woff");
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''), url('../fonts/Lato-Bold.woff2') format('woff2'),
+    url('../fonts/Lato-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''), url('../fonts/Lato-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Lato-ExtraBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local(''), url('../fonts/Lato-ExtraLight.woff2') format('woff2'),
+    url('../fonts/Lato-ExtraLight.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''), url('../fonts/Lato-Light.woff2') format('woff2'),
+    url('../fonts/Lato-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''), url('../fonts/Lato-Medium.woff2') format('woff2'),
+    url('../fonts/Lato-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''), url('../fonts/Lato-Regular.woff2') format('woff2'),
+    url('../fonts/Lato-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local(''), url('../fonts/Lato-SemiBold.woff2') format('woff2'),
+    url('../fonts/Lato-SemiBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local(''), url('../fonts/Lato-Thin.woff2') format('woff2'),
+    url('../fonts/Lato-Thin.woff') format('woff');
 }

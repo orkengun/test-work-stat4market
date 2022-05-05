@@ -1,22 +1,77 @@
 @import 'fonts';
+@import 'header';
+@import 'breadcrump';
+@import 'banner';
+@import 'history';
+@import 'marketplace';
 
 body {
-  background-color: red;
+  font-family: 'Lato';
+  font-size: 14px;
+  margin: 0;
+  color: #331a2f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+img.left-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+img.right-bg {
+  position: absolute;
+  right: 0;
+  top: 384px;
+}
+
+.section-title {
+  font-size: 48px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 132%;
 
   span {
-    color: #000;
+    color: #cf51ce;
   }
-  background: url(@img/bahandi-sm.png);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  transition: 0.3s;
+  text-decoration: none;
+
+  &:hover {
+    transform: translateY(2px);
+  }
+}
+
+.container {
+  max-width: 1500px;
+  width: auto;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.upper {
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {
-  span {
-    font-size: 20px;
-  }
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    background-color: #fff;
-  }
 }

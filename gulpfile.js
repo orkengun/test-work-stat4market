@@ -40,7 +40,7 @@ function watcher() {
 
 export { svgSprive }
 
-const fonts = gulp.series(otfToTtf, ttfToWoff,)
+const fonts = gulp.series(otfToTtf, ttfToWoff)
 
 const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images))
 

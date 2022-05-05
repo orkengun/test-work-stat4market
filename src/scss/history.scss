@@ -1,0 +1,44 @@
+.history {
+  padding-top: 130px;
+
+  .section-title {
+    margin-bottom: 100px;
+  }
+
+  &__bl {
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 7px;
+
+      img {
+        margin-right: 81px;
+      }
+
+      .text {
+        max-width: 750px;
+      }
+
+      p {
+        font-size: 25px;
+        line-height: 160%;
+        color: rgba(51, 26, 47, 0.8);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+        img {
+          margin: 0 0 0 85px;
+        }
+        p {
+          margin-bottom: 15px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.breadcrump {
+  display: flex;
+  margin-bottom: 15px;
+
+  li {
+    display: block;
+    margin-right: 28px;
+    position: relative;
+    font-size: 16px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -19px;
+      top: 9px;
+      background: rgba(51, 26, 47, 0.5);
+      width: 10px;
+      height: 1px;
+    }
+
+    &:first-child {
+      &::before {
+        display: none;
+      }
+    }
+
+    a {
+      color: rgba(51, 26, 47, 0.5);
+    }
+  }
+}

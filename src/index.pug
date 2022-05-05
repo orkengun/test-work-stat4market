@@ -2,11 +2,14 @@ doctype
 html(lang='en')
   include html/head
   body
+    img.left-bg(src="images/left-bg.png", alt="left-bg") 
+    img.right-bg(src="images/right-bg.png", alt="left-bg") 
     include html/header
-    main.page 
-    h1 Привет Оркен !
-    img(src="@img/bahandi-sm.png", alt="img")
-    span span
+    main.page
+      include html/breadcrump
+      include html/banner
+      include html/history
+      include html/marketplace
     include html/footer
     script(src="js/app.min.js")
 
