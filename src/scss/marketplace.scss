@@ -1,20 +1,53 @@
 .marketplace {
   padding: 140px 0;
 
+  h2.section-title {
+    @media screen and (max-width: 700px) {
+      padding: 0 5px;
+    }
+  }
+
   h4.descr {
     margin: 30px 0 85px;
     font-size: 25px;
     line-height: 160%;
     font-weight: 400;
     text-align: center;
+
+    @media screen and (max-width: 1500px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 700px) {
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
   }
 
   &__fl {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1200px) {
+      width: 77.35%;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      justify-content: center;
+    }
 
     &-item {
-      max-width: 290px;
+      max-width: 19.75%;
+
+      @media screen and (max-width: 1200px) {
+        max-width: 44.7%;
+        margin-bottom: 60px;
+      }
+      @media screen and (max-width: 700px) {
+        max-width: 80%;
+        text-align: center;
+      }
 
       img {
         box-shadow: 0px 4px 25px rgba(234, 93, 187, 0.25);
@@ -26,10 +59,22 @@
         font-size: 24px;
         line-height: 150%;
         margin: 30px 0 15px;
+
+        @media screen and (max-width: 1200px) {
+          font-size: 20px;
+          margin: 20px 0 10px;
+        }
+        @media screen and (max-width: 700px) {
+          font-size: 18px;
+        }
       }
       p {
         font-size: 18px;
         line-height: 160%;
+
+        @media screen and (max-width: 1200px) {
+          font-size: 16px;
+        }
       }
     }
   }

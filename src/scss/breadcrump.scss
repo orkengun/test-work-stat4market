@@ -12,10 +12,16 @@
       content: '';
       position: absolute;
       left: -19px;
-      top: 9px;
+      top: 11px;
       background: rgba(51, 26, 47, 0.5);
       width: 10px;
       height: 1px;
+    }
+
+    a {
+      &:hover {
+        color: #331a2f;
+      }
     }
 
     &:first-child {

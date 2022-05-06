@@ -2,14 +2,15 @@ doctype
 html(lang='en')
   include html/head
   body
-    img.left-bg(src="images/left-bg.png", alt="left-bg") 
-    img.right-bg(src="images/right-bg.png", alt="left-bg") 
+    img.left-bg(src="images/left-bg.png", alt="left-bg", data-aos="fade-right") 
+    img.right-bg(src="images/right-bg.png", alt="left-bg", data-aos="fade-left") 
     include html/header
     main.page
       include html/breadcrump
       include html/banner
       include html/history
       include html/marketplace
-    include html/footer
+
+    script(src="https://unpkg.com/aos@2.3.1/dist/aos.js") 
     script(src="js/app.min.js")
 

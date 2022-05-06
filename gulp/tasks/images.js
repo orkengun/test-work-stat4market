@@ -1,5 +1,6 @@
 import webp from 'gulp-webp'
 import imagemin from 'gulp-imagemin'
+import imageminWebp from 'imagemin-webp';
 
 export const images = () => {
   return app.gulp.src(app.path.src.images, { sourcemaps: true })
@@ -32,7 +33,10 @@ export const images = () => {
         progressive: true,
         svgoPlugins: [{ removeViewBox: false }],
         interlaced: true,
-        optimizationLevel: 3
+        optimizationLevel: 3,
+        plugins: [
+          imageminWebp({ quality: 95 })
+        ]
       })
     ))
     .pipe(app.gulp.dest(app.path.build.images))

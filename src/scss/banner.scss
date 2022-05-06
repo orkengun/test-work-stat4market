@@ -1,15 +1,42 @@
 .banner {
+  @media screen and (max-width: 1200px) {
+    margin-top: -35px;
+  }
+  .container {
+    @media screen and (max-width: 1200px) {
+      padding-right: 0;
+    }
+  }
   &-fl {
     display: flex;
+    position: relative;
+    overflow-x: hidden;
   }
 
   &__info {
     margin-right: 72px;
 
+    @media screen and (max-width: 1200px) {
+      margin-right: 0;
+    }
+
     h1 {
       font-weight: 700;
       font-size: 56px;
       line-height: 143%;
+
+      @media screen and (max-width: 1500px) {
+        font-size: 46px;
+        max-width: 688px;
+      }
+      @media screen and (max-width: 1200px) {
+        max-width: 100%;
+      }
+      @media screen and (max-width: 700px) {
+        font-size: 26px;
+        max-width: 202px;
+        margin-top: 70px;
+      }
 
       span {
         color: #cf51ce;
@@ -20,6 +47,10 @@
       align-items: center;
       margin: 22px 0 16px;
       font-weight: 500;
+
+      @media screen and (max-width: 1500px) {
+        margin: 40px 0;
+      }
 
       p {
         font-size: 18px;
@@ -38,11 +69,27 @@
     }
     .text {
       max-width: 868px;
+
+      @media screen and (max-width: 1500px) {
+        max-width: 711px;
+      }
+      @media screen and (max-width: 1200px) {
+        max-width: 482px;
+      }
+      @media screen and (max-width: 700px) {
+        font-size: 18px;
+        padding-right: 15px;
+      }
+
       p {
         margin-bottom: 15px;
         font-size: 25px;
         line-height: 160%;
         color: rgba(51, 26, 47, 0.8);
+
+        @media screen and (max-width: 1500px) {
+          font-size: 20px;
+        }
       }
     }
   }
@@ -50,9 +97,34 @@
   &__img {
     position: relative;
 
+    .superman {
+      @media screen and (max-width: 1500px) {
+        max-width: 435px;
+      }
+      @media screen and (max-width: 1200px) {
+        max-width: 410px;
+        position: absolute;
+        right: -165px;
+        top: 33%;
+      }
+      @media screen and (max-width: 700px) {
+        max-width: 245px;
+        top: 20px;
+        left: -145px;
+      }
+    }
+
     .stars {
       position: absolute;
-      left: 0px;
+      left: -15px;
+
+      @media screen and (max-width: 1500px) {
+        max-width: 458px;
+        left: 0;
+      }
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
     }
   }
 }
